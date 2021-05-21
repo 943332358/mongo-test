@@ -9,10 +9,10 @@ import java.security.Principal;
  * @author yangxin
  */
 @RestController
-@RequestMapping("admin")
-public class AdminController {
+@RequestMapping("user")
+public class UserController {
     @RequestMapping("info")
-    public String adminInfo(Principal principal) {
+    public String userInfo(Principal principal) {
         return principal.getName();
     }
 }
