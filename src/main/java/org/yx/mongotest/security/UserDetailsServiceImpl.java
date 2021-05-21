@@ -9,8 +9,7 @@ import org.yx.mongotest.yx.dao.MongoDao;
 import org.yx.mongotest.yx.entity.User;
 
 import javax.annotation.Resource;
-import java.util.Arrays;
-import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author yangxin
@@ -23,11 +22,8 @@ public class UserDetailsServiceImpl implements UserDetailsService {
     @Override
     public UserDetails loadUserByUsername(String username) throws UsernameNotFoundException {
         User user = mongoDao.findByName(username).orElseThrow(() -> new UsernameNotFoundException(String.format("not found:%s", username)));
-        return new org.springframework.security.core.userdetails.User(user.getName(), user.getPassword(), getAuthority());
-    }
-
-    private List<SimpleGrantedAuthority> getAuthority() {
-        return Arrays.asList(new SimpleGrantedAuthority("ADMIN"), new SimpleGrantedAuthority("USER1"), new SimpleGrantedAuthority("USER2"));
+        return new org.springframework.security.core.userdetails.User(user.getName(), user.getPassword(),
+                user.getRoles().stream().map(m -> new SimpleGrantedAuthority("ROLE_" + m)).collect(Collectors.toList()));
     }
 
 }

@@ -18,10 +18,9 @@ public class MongoService {
     @Resource
     private PasswordEncoder passwordEncoder;
 
-    public int insert(User user) {
+    public User insert(User user) {
         user.setPassword(passwordEncoder.encode(user.getPassword()));
 
-        User user1 = mongoDao.insert(user);
-        return 0;
+        return mongoDao.insert(user);
     }
 }
