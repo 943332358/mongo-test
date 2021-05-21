@@ -1,0 +1,116 @@
+2021-05-17 10:01:49.174 [10.4.230.116] [main] - [INFO ] [ideal4j.robot.App : 55] - Starting App on DESKTOP-NK2PNFR with PID 18704 (C:\Users\yangxin\IdeaProjects\robot\target\classes started by yangxin in C:\Users\yangxin\IdeaProjects\mongo-test)
+2021-05-17 10:01:49.185 [10.4.230.116] [main] - [INFO ] [ideal4j.robot.App : 655] - The following profiles are active: dev
+2021-05-17 10:01:50.327 [10.4.230.116] [main] - [INFO ] [i.icity.config.mybatis.DynamicDataSourceRegister : 98] - 注册成功！！！！！！！！！！！！！！！！！！！！！！！！1
+2021-05-17 10:01:50.704 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-17 10:01:50.705 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 127] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-17 10:01:50.814 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 187] - Finished Spring Data repository scanning in 97ms. Found 0 JPA repository interfaces.
+2021-05-17 10:01:50.833 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-17 10:01:50.835 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-17 10:01:50.916 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 187] - Finished Spring Data repository scanning in 68ms. Found 0 Redis repository interfaces.
+2021-05-17 10:01:51.621 [10.4.230.116] [main] - [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330] - Bean 'dataSecurityProperties' of type [ideal4j.icity.config.datasecurity.DataSecurityProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-17 10:01:51.896 [10.4.230.116] [main] - [INFO ] [o.s.boot.web.embedded.tomcat.TomcatWebServer : 92] - Tomcat initialized with port(s): 8089 (http)
+2021-05-17 10:01:51.907 [10.4.230.116] [main] - [INFO ] [org.apache.coyote.http11.Http11NioProtocol : 173] - Initializing ProtocolHandler ["http-nio-8089"]
+2021-05-17 10:01:51.908 [10.4.230.116] [main] - [INFO ] [org.apache.catalina.core.StandardService : 173] - Starting service [Tomcat]
+2021-05-17 10:01:51.909 [10.4.230.116] [main] - [INFO ] [org.apache.catalina.core.StandardEngine : 173] - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2021-05-17 10:01:52.058 [10.4.230.116] [main] - [INFO ] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173] - Initializing Spring embedded WebApplicationContext
+2021-05-17 10:01:52.059 [10.4.230.116] [main] - [INFO ] [org.springframework.web.context.ContextLoader : 284] - Root WebApplicationContext: initialization completed in 2610 ms
+2021-05-17 10:01:52.808 [10.4.230.116] [main] - [INFO ] [com.alibaba.druid.pool.DruidDataSource : 930] - {dataSource-1} inited
+2021-05-17 10:01:52.912 [10.4.230.116] [main] - [INFO ] [org.hibernate.jpa.internal.util.LogHelper : 31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-17 10:01:53.016 [10.4.230.116] [main] - [INFO ] [org.hibernate.Version : 44] - HHH000412: Hibernate ORM core version 5.4.12.Final
+2021-05-17 10:01:53.197 [10.4.230.116] [main] - [INFO ] [org.hibernate.annotations.common.Version : 49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-05-17 10:01:53.347 [10.4.230.116] [main] - [INFO ] [org.hibernate.dialect.Dialect : 172] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-05-17 10:01:53.562 [10.4.230.116] [main] - [INFO ] [o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-17 10:01:53.572 [10.4.230.116] [main] - [INFO ] [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-17 10:01:54.710 [10.4.230.116] [main] - [INFO ] [com.alibaba.druid.pool.DruidDataSource : 930] - {dataSource-2} inited
+2021-05-17 10:01:55.084 [10.4.230.116] [main] - [INFO ] [i.r.p.i.investment.component.InitTestDataConfig : 47] - 机器人初始社区为：{"address":"温州路41弄2号106室","alt":"60","belongCommittee":"CB283B8BCB4A40DCBE16DA60C3C5DF4D","belongDeptId":"306F624434454440A18A8F44E8A67D8F","belongLesseeId":"43A4F71C7EB746BAA97F0F4B106BA8B8","buildTime":"2017","cityCode":"310100","cityName":"上海市","civilizationIndex":null,"count":null,"createTime":"2020-10-27 20:27:48","createUser":"jktest_admin","deptFullName":null,"deptId":"306F624434454440A18A8F44E8A67D8F","deptIds":null,"districtCode":"310101","districtName":"黄浦区","gisArea":"坐标","gisType":"1","id":"8DDA0094ABB54D49BB5461120BBB0C49","lat":"31.244601","level":null,"lon":"121.476969","memo":null,"page":null,"pageSize":null,"parkings":null,"picUrl":"group1_M00/05/D1/rB8v4l-YDD6APTzCAABKZ_Ww9eM679.jpg","policeStation":"南京东路街道派出所","provinceCode":"310000","provinceName":"上海","roadCode":"189","shouldbeCount":"200","state":1,"streetCode":"310101002","streetName":"南京东路街道","updateTime":null,"updateUser":null,"villageCode":"fh_sq","villageName":"福海社区"}
+2021-05-17 10:01:55.632 [10.4.230.116] [main] - [INFO ] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration : 86] - 
+
+Using generated security password: 01d31ef9-babc-4c42-8674-05c3bb38e383
+
+2021-05-17 10:01:55.698 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/error'], []
+2021-05-17 10:01:55.699 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/favicon.ico'], []
+2021-05-17 10:01:55.699 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/druid/**'], []
+2021-05-17 10:01:55.700 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/robot/investment/*'], []
+2021-05-17 10:01:55.700 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/robot/enterprise/interface/**'], []
+2021-05-17 10:01:55.701 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/robot/pc/**'], []
+2021-05-17 10:01:55.701 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/robot/running/posture/**'], []
+2021-05-17 10:01:55.736 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@577f81a0, org.springframework.security.web.context.SecurityContextPersistenceFilter@41c83af0, org.springframework.security.web.header.HeaderWriterFilter@41831611, org.springframework.security.web.authentication.logout.LogoutFilter@7e5e7753, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@60658389, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@6f00c40e, org.springframework.security.web.session.SessionManagementFilter@594fcb22, org.springframework.security.web.access.ExceptionTranslationFilter@bddac1c, ideal4j.icity.core.security.CustomFilterSecurityInterceptor@202d1424, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@170f0fd6, ideal4j.robot.config.security.ConcurrentSessionConfigFilter@1256925b]
+2021-05-17 10:01:55.863 [10.4.230.116] [main] - [INFO ] [io.lettuce.core.EpollProvider : 68] - Starting without optional epoll library
+2021-05-17 10:01:55.866 [10.4.230.116] [main] - [INFO ] [io.lettuce.core.KqueueProvider : 70] - Starting without optional kqueue library
+2021-05-17 10:01:56.772 [10.4.230.116] [main] - [INFO ] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-17 10:01:56.843 [10.4.230.116] [main] - [INFO ] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-17 10:01:56.845 [10.4.230.116] [main] - [INFO ] [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-17 10:01:56.992 [10.4.230.116] [main] - [INFO ] [org.apache.catalina.core.StandardService : 173] - Stopping service [Tomcat]
+2021-05-17 10:01:57.007 [10.4.230.116] [main] - [INFO ] [o.s.b.a.l.ConditionEvaluationReportLoggingListener : 136] - 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2021-05-17 10:08:19.644 [10.4.230.116] [main] - [INFO ] [ideal4j.robot.App : 55] - Starting App on DESKTOP-NK2PNFR with PID 18896 (C:\Users\yangxin\IdeaProjects\robot\target\classes started by yangxin in C:\Users\yangxin\IdeaProjects\mongo-test)
+2021-05-17 10:08:19.650 [10.4.230.116] [main] - [INFO ] [ideal4j.robot.App : 655] - The following profiles are active: dev
+2021-05-17 10:08:20.777 [10.4.230.116] [main] - [INFO ] [i.icity.config.mybatis.DynamicDataSourceRegister : 98] - 注册成功！！！！！！！！！！！！！！！！！！！！！！！！1
+2021-05-17 10:08:21.159 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-17 10:08:21.160 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 127] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-17 10:08:21.257 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 187] - Finished Spring Data repository scanning in 89ms. Found 0 JPA repository interfaces.
+2021-05-17 10:08:21.271 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-17 10:08:21.273 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-17 10:08:21.355 [10.4.230.116] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 187] - Finished Spring Data repository scanning in 72ms. Found 0 Redis repository interfaces.
+2021-05-17 10:08:21.974 [10.4.230.116] [main] - [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330] - Bean 'dataSecurityProperties' of type [ideal4j.icity.config.datasecurity.DataSecurityProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-17 10:08:22.257 [10.4.230.116] [main] - [INFO ] [o.s.boot.web.embedded.tomcat.TomcatWebServer : 92] - Tomcat initialized with port(s): 8089 (http)
+2021-05-17 10:08:22.267 [10.4.230.116] [main] - [INFO ] [org.apache.coyote.http11.Http11NioProtocol : 173] - Initializing ProtocolHandler ["http-nio-8089"]
+2021-05-17 10:08:22.269 [10.4.230.116] [main] - [INFO ] [org.apache.catalina.core.StandardService : 173] - Starting service [Tomcat]
+2021-05-17 10:08:22.269 [10.4.230.116] [main] - [INFO ] [org.apache.catalina.core.StandardEngine : 173] - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2021-05-17 10:08:22.411 [10.4.230.116] [main] - [INFO ] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173] - Initializing Spring embedded WebApplicationContext
+2021-05-17 10:08:22.411 [10.4.230.116] [main] - [INFO ] [org.springframework.web.context.ContextLoader : 284] - Root WebApplicationContext: initialization completed in 2486 ms
+2021-05-17 10:08:23.041 [10.4.230.116] [main] - [INFO ] [com.alibaba.druid.pool.DruidDataSource : 930] - {dataSource-1} inited
+2021-05-17 10:08:23.139 [10.4.230.116] [main] - [INFO ] [org.hibernate.jpa.internal.util.LogHelper : 31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-17 10:08:23.216 [10.4.230.116] [main] - [INFO ] [org.hibernate.Version : 44] - HHH000412: Hibernate ORM core version 5.4.12.Final
+2021-05-17 10:08:23.354 [10.4.230.116] [main] - [INFO ] [org.hibernate.annotations.common.Version : 49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2021-05-17 10:08:23.481 [10.4.230.116] [main] - [INFO ] [org.hibernate.dialect.Dialect : 172] - HHH000400: Using dialect: org.hibernate.dialect.MySQL57Dialect
+2021-05-17 10:08:23.659 [10.4.230.116] [main] - [INFO ] [o.h.e.t.jta.platform.internal.JtaPlatformInitiator : 52] - HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2021-05-17 10:08:23.669 [10.4.230.116] [main] - [INFO ] [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 416] - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2021-05-17 10:08:24.776 [10.4.230.116] [main] - [INFO ] [com.alibaba.druid.pool.DruidDataSource : 930] - {dataSource-2} inited
+2021-05-17 10:08:25.137 [10.4.230.116] [main] - [INFO ] [i.r.p.i.investment.component.InitTestDataConfig : 47] - 机器人初始社区为：{"address":"温州路41弄2号106室","alt":"60","belongCommittee":"CB283B8BCB4A40DCBE16DA60C3C5DF4D","belongDeptId":"306F624434454440A18A8F44E8A67D8F","belongLesseeId":"43A4F71C7EB746BAA97F0F4B106BA8B8","buildTime":"2017","cityCode":"310100","cityName":"上海市","civilizationIndex":null,"count":null,"createTime":"2020-10-27 20:27:48","createUser":"jktest_admin","deptFullName":null,"deptId":"306F624434454440A18A8F44E8A67D8F","deptIds":null,"districtCode":"310101","districtName":"黄浦区","gisArea":"坐标","gisType":"1","id":"8DDA0094ABB54D49BB5461120BBB0C49","lat":"31.244601","level":null,"lon":"121.476969","memo":null,"page":null,"pageSize":null,"parkings":null,"picUrl":"group1_M00/05/D1/rB8v4l-YDD6APTzCAABKZ_Ww9eM679.jpg","policeStation":"南京东路街道派出所","provinceCode":"310000","provinceName":"上海","roadCode":"189","shouldbeCount":"200","state":1,"streetCode":"310101002","streetName":"南京东路街道","updateTime":null,"updateUser":null,"villageCode":"fh_sq","villageName":"福海社区"}
+2021-05-17 10:08:25.660 [10.4.230.116] [main] - [INFO ] [o.s.b.a.s.s.UserDetailsServiceAutoConfiguration : 86] - 
+
+Using generated security password: 3fbccbb1-6bff-4fea-b017-287020a53874
+
+2021-05-17 10:08:25.714 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/error'], []
+2021-05-17 10:08:25.714 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/favicon.ico'], []
+2021-05-17 10:08:25.715 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/druid/**'], []
+2021-05-17 10:08:25.715 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/robot/investment/*'], []
+2021-05-17 10:08:25.716 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/robot/enterprise/interface/**'], []
+2021-05-17 10:08:25.716 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/robot/pc/**'], []
+2021-05-17 10:08:25.717 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: Ant [pattern='/robot/running/posture/**'], []
+2021-05-17 10:08:25.750 [10.4.230.116] [main] - [INFO ] [o.s.security.web.DefaultSecurityFilterChain : 43] - Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@33502cfe, org.springframework.security.web.context.SecurityContextPersistenceFilter@7359f3ac, org.springframework.security.web.header.HeaderWriterFilter@36ec4071, org.springframework.security.web.authentication.logout.LogoutFilter@20505460, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@3d9cba2, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3958db82, org.springframework.security.web.session.SessionManagementFilter@59700156, org.springframework.security.web.access.ExceptionTranslationFilter@237bdbcb, ideal4j.icity.core.security.CustomFilterSecurityInterceptor@729d1428, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@5af1b221, ideal4j.robot.config.security.ConcurrentSessionConfigFilter@115924ba]
+2021-05-17 10:08:25.862 [10.4.230.116] [main] - [INFO ] [io.lettuce.core.EpollProvider : 68] - Starting without optional epoll library
+2021-05-17 10:08:25.865 [10.4.230.116] [main] - [INFO ] [io.lettuce.core.KqueueProvider : 70] - Starting without optional kqueue library
+2021-05-17 10:08:26.744 [10.4.230.116] [main] - [INFO ] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 181] - Initializing ExecutorService 'applicationTaskExecutor'
+2021-05-17 10:08:26.933 [10.4.230.116] [main] - [INFO ] [t.mybatis.mapper.autoconfigure.MapperCacheDisabler : 60] - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2021-05-17 10:08:26.934 [10.4.230.116] [main] - [INFO ] [t.mybatis.mapper.autoconfigure.MapperCacheDisabler : 60] - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2021-05-17 10:08:26.935 [10.4.230.116] [main] - [INFO ] [t.mybatis.mapper.autoconfigure.MapperCacheDisabler : 60] - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2021-05-17 10:08:26.936 [10.4.230.116] [main] - [INFO ] [t.mybatis.mapper.autoconfigure.MapperCacheDisabler : 83] - Clear EntityHelper entityTableMap cache.
+2021-05-17 10:08:27.815 [10.4.230.116] [main] - [INFO ] [o.s.s.a.ScheduledAnnotationBeanPostProcessor : 297] - No TaskScheduler/ScheduledExecutorService bean found for scheduled processing
+2021-05-17 10:08:27.826 [10.4.230.116] [main] - [INFO ] [org.apache.coyote.http11.Http11NioProtocol : 173] - Starting ProtocolHandler ["http-nio-8089"]
+2021-05-17 10:08:27.844 [10.4.230.116] [main] - [INFO ] [o.s.boot.web.embedded.tomcat.TomcatWebServer : 204] - Tomcat started on port(s): 8089 (http) with context path ''
+2021-05-17 10:08:27.848 [10.4.230.116] [main] - [INFO ] [ideal4j.robot.App : 61] - Started App in 9.358 seconds (JVM running for 11.239)
+2021-05-17 10:10:31.260 [10.4.230.116] [SpringContextShutdownHook] - [INFO ] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-17 10:10:31.263 [10.4.230.116] [SpringContextShutdownHook] - [INFO ] [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 598] - Closing JPA EntityManagerFactory for persistence unit 'default'
+2021-05-17 10:42:19.789 [192.168.42.226] [main] - [INFO ] [ideal4j.robot.App : 55] - Starting App on DESKTOP-NK2PNFR with PID 15152 (C:\Users\yangxin\IdeaProjects\robot\target\classes started by yangxin in C:\Users\yangxin\IdeaProjects\mongo-test)
+2021-05-17 10:42:19.794 [192.168.42.226] [main] - [INFO ] [ideal4j.robot.App : 655] - The following profiles are active: dev
+2021-05-17 10:42:20.947 [192.168.42.226] [main] - [INFO ] [i.icity.config.mybatis.DynamicDataSourceRegister : 98] - 注册成功！！！！！！！！！！！！！！！！！！！！！！！！1
+2021-05-17 10:42:21.329 [192.168.42.226] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-17 10:42:21.331 [192.168.42.226] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 127] - Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2021-05-17 10:42:21.453 [192.168.42.226] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 187] - Finished Spring Data repository scanning in 108ms. Found 0 JPA repository interfaces.
+2021-05-17 10:42:21.474 [192.168.42.226] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 249] - Multiple Spring Data modules found, entering strict repository configuration mode!
+2021-05-17 10:42:21.476 [192.168.42.226] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 127] - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2021-05-17 10:42:21.561 [192.168.42.226] [main] - [INFO ] [o.s.d.r.config.RepositoryConfigurationDelegate : 187] - Finished Spring Data repository scanning in 76ms. Found 0 Redis repository interfaces.
+2021-05-17 10:42:22.183 [192.168.42.226] [main] - [INFO ] [o.s.c.s.PostProcessorRegistrationDelegate$BeanPostProcessorChecker : 330] - Bean 'dataSecurityProperties' of type [ideal4j.icity.config.datasecurity.DataSecurityProperties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2021-05-17 10:42:22.452 [192.168.42.226] [main] - [INFO ] [o.s.boot.web.embedded.tomcat.TomcatWebServer : 92] - Tomcat initialized with port(s): 8089 (http)
+2021-05-17 10:42:22.466 [192.168.42.226] [main] - [INFO ] [org.apache.coyote.http11.Http11NioProtocol : 173] - Initializing ProtocolHandler ["http-nio-8089"]
+2021-05-17 10:42:22.468 [192.168.42.226] [main] - [INFO ] [org.apache.catalina.core.StandardService : 173] - Starting service [Tomcat]
+2021-05-17 10:42:22.468 [192.168.42.226] [main] - [INFO ] [org.apache.catalina.core.StandardEngine : 173] - Starting Servlet engine: [Apache Tomcat/9.0.31]
+2021-05-17 10:42:22.616 [192.168.42.226] [main] - [INFO ] [o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] : 173] - Initializing Spring embedded WebApplicationContext
+2021-05-17 10:42:22.617 [192.168.42.226] [main] - [INFO ] [org.springframework.web.context.ContextLoader : 284] - Root WebApplicationContext: initialization completed in 2558 ms
+2021-05-17 10:42:25.967 [192.168.42.226] [main] - [INFO ] [com.alibaba.druid.pool.DruidDataSource : 930] - {dataSource-1} inited
+2021-05-17 10:42:26.082 [192.168.42.226] [main] - [INFO ] [org.hibernate.jpa.internal.util.LogHelper : 31] - HHH000204: Processing PersistenceUnitInfo [name: default]
+2021-05-17 10:42:26.167 [192.168.42.226] [main] - [INFO ] [org.hibernate.Version : 44] - HHH000412: Hibernate ORM core version 5.4.12.Final
+2021-05-17 10:42:26.437 [192.168.42.226] [main] - [INFO ] [org.hibernate.annotations.common.Version : 49] - HCANN000001: Hibernate Commons Annotations {5.1.0.Final}

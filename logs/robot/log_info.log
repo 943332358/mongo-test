@@ -1,0 +1,16 @@
+2021-05-19 08:36:43.489 [127.0.0.1] [lettuce-eventExecutorLoop-1-6] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:36:43.489 [127.0.0.1] [lettuce-eventExecutorLoop-1-5] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:36:52.247 [127.0.0.1] [lettuce-eventExecutorLoop-1-8] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:36:52.247 [127.0.0.1] [lettuce-eventExecutorLoop-1-7] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:37:08.646 [127.0.0.1] [lettuce-eventExecutorLoop-1-2] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:37:08.646 [127.0.0.1] [lettuce-eventExecutorLoop-1-1] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:37:38.746 [127.0.0.1] [lettuce-eventExecutorLoop-1-5] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:37:38.746 [127.0.0.1] [lettuce-eventExecutorLoop-1-4] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:38:08.847 [127.0.0.1] [lettuce-eventExecutorLoop-1-6] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:38:08.847 [127.0.0.1] [lettuce-eventExecutorLoop-1-7] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:38:38.946 [10.4.230.116] [lettuce-eventExecutorLoop-1-8] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:38:38.946 [10.4.230.116] [lettuce-eventExecutorLoop-1-1] - [INFO ] [io.lettuce.core.protocol.ConnectionWatchdog : 171] - Reconnecting, last destination was 172.31.47.176:6379
+2021-05-19 08:38:38.950 [10.4.230.116] [lettuce-nioEventLoop-4-1] - [INFO ] [io.lettuce.core.protocol.ReconnectionHandler : 188] - Reconnected to 172.31.47.176:6379
+2021-05-19 08:38:38.950 [10.4.230.116] [lettuce-nioEventLoop-4-2] - [INFO ] [io.lettuce.core.protocol.ReconnectionHandler : 188] - Reconnected to 172.31.47.176:6379
+2021-05-19 09:10:47.852 [192.168.42.226] [SpringContextShutdownHook] - [INFO ] [o.s.scheduling.concurrent.ThreadPoolTaskExecutor : 218] - Shutting down ExecutorService 'applicationTaskExecutor'
+2021-05-19 09:10:47.858 [192.168.42.226] [SpringContextShutdownHook] - [INFO ] [o.s.orm.jpa.LocalContainerEntityManagerFactoryBean : 598] - Closing JPA EntityManagerFactory for persistence unit 'default'
