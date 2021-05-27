@@ -28,4 +28,8 @@ public class Result<T> {
     public static Result<String> ok() {
         return new Result<>(0, "success", "操作成功");
     }
+
+    public static <T> Result<T> ok(T t) {
+        return new Result<>(0, t, "操作成功");
+    }
 }
