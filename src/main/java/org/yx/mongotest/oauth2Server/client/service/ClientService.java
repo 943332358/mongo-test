@@ -7,6 +7,7 @@ import org.springframework.data.mongodb.core.query.Query;
 import org.springframework.data.mongodb.gridfs.GridFsTemplate;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
+import org.yx.mongotest.gridFs.GridFsService;
 import org.yx.mongotest.oauth2Server.client.dao.ClientRepository;
 import org.yx.mongotest.oauth2Server.client.entity.ClientState;
 import org.yx.mongotest.oauth2Server.client.entity.Oauth2Client;
@@ -30,6 +31,9 @@ public class ClientService {
     @Resource
     private GridFsTemplate gridFsTemplate;
 
+    @Resource
+    private GridFsService gridFsService;
+
     /**
      * TODO 校验用户输入参数、回调地址合法性
      */
@@ -51,7 +55,7 @@ public class ClientService {
                         throw new RuntimeException(e);
                     }
                 })
-                .orElseGet(() -> Optional.ofNullable(gridFsTemplate.findOne(Query.query(Criteria.where("metadata.default").is(true))))
+                .orElseGet(() -> Optional.ofNullable(gridFsService.getDefaultLogo())
                         .map(m -> m.getObjectId().toHexString())
                         .orElseThrow(RuntimeException::new)));
 

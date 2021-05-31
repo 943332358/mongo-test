@@ -14,4 +14,6 @@ import org.yx.mongotest.oauth2Server.client.entity.Oauth2Client;
 @Accessors(chain = true)
 public class Oauth2ClientDto extends Oauth2Client {
 
+    private String clientLogoBase64;
+
 }

@@ -27,6 +27,9 @@ public class Oauth2Client {
      */
     private String callbackUrl;
 
+    /**
+     * 客户端logo文件Id
+     */
     private String clientLogo;
 
     /**
