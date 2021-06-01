@@ -1,9 +1,9 @@
-package org.yx.mongotest.yx.controller;
+package org.yx.mongotest.authorization.controller;
 
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
-import org.yx.mongotest.yx.entity.User;
-import org.yx.mongotest.yx.service.MongoService;
+import org.yx.mongotest.authorization.entity.User;
+import org.yx.mongotest.authorization.service.MongoService;
 
 import javax.annotation.Resource;
 

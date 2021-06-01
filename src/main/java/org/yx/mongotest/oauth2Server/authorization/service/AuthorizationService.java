@@ -11,7 +11,6 @@ import org.yx.mongotest.gridFs.GridFsService;
 import org.yx.mongotest.oauth2Server.authorization.dto.AuthorizeDto;
 import org.yx.mongotest.oauth2Server.client.dao.ClientRepository;
 import org.yx.mongotest.oauth2Server.client.dto.Oauth2ClientDto;
-import org.yx.mongotest.oauth2Server.client.entity.Oauth2Client;
 
 import javax.annotation.Resource;
 import java.io.IOException;
@@ -37,7 +36,7 @@ public class AuthorizationService {
     /**
      * 校验客户端是否合法
      */
-    public Oauth2Client clientCheck(AuthorizeDto authorize) {
+    public Oauth2ClientDto clientCheck(AuthorizeDto authorize) {
         final Function<GridFSFile, String> function = f -> {
             try {
                 return Base64.getEncoder().encodeToString(ByteStreams.toByteArray(gridFsTemplate.getResource(f).getInputStream()));
@@ -51,7 +50,7 @@ public class AuthorizationService {
                 .map(m -> {
                     GridFSFile fsFile = Optional.ofNullable(m.getClientLogo())
                             .map(logo -> gridFsTemplate.findOne(Query.query(Criteria.where("_id").is(logo))))
-                            .orElse(gridFsService.getDefaultLogo());
+                            .orElseGet(() -> gridFsService.getDefaultLogo());
 
                     Oauth2ClientDto clientDto = new Oauth2ClientDto().setClientLogoBase64(function.apply(fsFile));
                     BeanUtils.copyProperties(m, clientDto);

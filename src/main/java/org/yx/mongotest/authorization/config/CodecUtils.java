@@ -1,4 +1,4 @@
-package org.yx.mongotest.yx.config;
+package org.yx.mongotest.authorization.config;
 
 import org.apache.commons.codec.DecoderException;
 import org.apache.commons.codec.binary.Base64;

@@ -1,9 +1,9 @@
-package org.yx.mongotest.yx.service;
+package org.yx.mongotest.authorization.service;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-import org.yx.mongotest.yx.dao.MongoDao;
-import org.yx.mongotest.yx.entity.User;
+import org.yx.mongotest.authorization.dao.MongoDao;
+import org.yx.mongotest.authorization.entity.User;
 
 import javax.annotation.Resource;
 

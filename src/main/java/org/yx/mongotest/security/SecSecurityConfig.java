@@ -23,6 +23,9 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
     @Resource(name = "userDetailsService")
     private UserDetailsService detailsService;
 
+    @Resource
+    private AuthenticationSuccessHandler successHandler;
+
     @Bean
     public PasswordEncoder passwordEncoder() {
         return new BCryptPasswordEncoder();
@@ -60,7 +63,7 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
                 .and()
                 .formLogin()
                 .loginPage("/login.html")
-                .defaultSuccessUrl("/homepage.html", true)
+                .successHandler(successHandler)
                 .failureUrl("/login.html?error=true")
                 .and()
                 .logout()

@@ -6,9 +6,9 @@
 </head>
 <body>
 <form>
-    <img src="/">
-    <p></p>
-
+    <img alt="" th:src="${'data:image/png;base64,'+client.clientLogoBase64}"
+         style="width: 100px;height: 100px;"/>
+    <p th:text="${client.clientName}"></p>
 </form>
 
 </body>

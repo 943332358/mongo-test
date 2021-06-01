@@ -1,4 +1,4 @@
-package org.yx.mongotest.yx.entity;
+package org.yx.mongotest.authorization.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sun.istack.internal.NotNull;
@@ -32,5 +32,5 @@ public class User {
     private LocalDate birthday;
 
     @NotNull
-    private List<String> roles;
+    private List<Role> roles;
 }

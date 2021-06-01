@@ -1,8 +1,8 @@
 package org.yx.mongotest.oauth2Server.authorization.controller;
 
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.servlet.ModelAndView;
 import org.yx.mongotest.oauth2Server.authorization.dto.AuthorizeDto;
 import org.yx.mongotest.oauth2Server.authorization.service.AuthorizationService;
 import org.yx.mongotest.oauth2Server.client.entity.Oauth2Client;
@@ -27,9 +27,8 @@ public class AuthorizationController {
     }
 
     @RequestMapping("authorize")
-    public ModelAndView authorize(AuthorizeDto authorize, ModelAndView view) {
-        view.setViewName("authorization");
-        view.addObject(authorizationService.clientCheck(authorize));
-        return view;
+    public String authorize(AuthorizeDto authorize, Model model) {
+        model.addAttribute("client", authorizationService.clientCheck(authorize));
+        return "authorization";
     }
 }
