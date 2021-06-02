@@ -6,3 +6,5 @@ spring:
       database: test
   thymeleaf:
     cache: false
+jwt:
+  privateKey: 123456789

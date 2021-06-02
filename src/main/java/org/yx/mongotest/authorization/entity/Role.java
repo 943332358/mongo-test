@@ -13,6 +13,8 @@ import java.util.List;
 public class Role {
     private String roleName;
 
+    private List<Permissions> permissions;
+
     @Data
     static class Permissions {
         /**

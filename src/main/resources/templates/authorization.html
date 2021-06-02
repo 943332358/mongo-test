@@ -1,14 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns="http://www.w3.org/1999/html">
 <head>
     <meta charset="UTF-8">
     <title>用户授权</title>
 </head>
 <body>
-<form>
+<form action="/oauth/toClient">
     <img alt="" th:src="${'data:image/png;base64,'+client.clientLogoBase64}"
          style="width: 100px;height: 100px;"/>
     <p th:text="${client.clientName}"></p>
+    <input type="hidden" name="clientId" th:value="${client.clientId}">
+    <label>
+        <input type="checkbox" name="userImg">
+        用户头像
+    </label>
+    <label>
+        <input type="checkbox" name="userPermissions">
+        用户权限
+    </label>
+    <label>
+        <input type="checkbox" name="userInfo">
+        用户信息
+    </label>
+    <br/>
+    <input type="submit" value="authorization">
 </form>
 
 </body>

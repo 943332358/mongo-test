@@ -70,5 +70,13 @@ public class ClientService {
         return UUID.randomUUID().toString();
     }
 
+    public String findClientSecretsById(String clientId) {
+        return repository.findClientSecretsByClientId(clientId).map(Oauth2Client::getClientSecrets).orElseThrow(() -> new RuntimeException("ClientSecrets not found"));
+    }
+
+    public String findCallbackUrlById(String clientId) {
+        return repository.findCallbackUrlByClientId(clientId).map(Oauth2Client::getCallbackUrl).orElseThrow(() -> new RuntimeException("CallbackUrl not found"));
+    }
+
 
 }
