@@ -1,6 +1,7 @@
 package org.yx.mongotest.security;
 
 import org.springframework.security.core.Authentication;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.web.authentication.SavedRequestAwareAuthenticationSuccessHandler;
 import org.springframework.security.web.savedrequest.HttpSessionRequestCache;
 import org.springframework.security.web.savedrequest.RequestCache;
@@ -18,6 +19,13 @@ import java.io.IOException;
 public class AuthenticationSuccessHandler extends SavedRequestAwareAuthenticationSuccessHandler {
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws ServletException, IOException {
+        UserDetails user = (UserDetails) authentication.getPrincipal();
+        /*Cookie cookie = new Cookie("username", user.getUsername());
+        cookie.setHttpOnly(true);
+        response.addCookie(cookie);*/
+
+        request.getSession().setAttribute("username", user.getUsername());
+
         RequestCache requestCache = new HttpSessionRequestCache();
         // 为空，说明直接访问的登录页。无需跳转回去
         if (requestCache.getRequest(request, response) == null) {

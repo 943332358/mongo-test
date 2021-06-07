@@ -32,4 +32,8 @@ public class Result<T> {
     public static <T> Result<T> ok(T t) {
         return new Result<>(0, t, "操作成功");
     }
+
+    public static <T> Result<T> failed(T t) {
+        return new Result<>(1, t, "操作失败");
+    }
 }
