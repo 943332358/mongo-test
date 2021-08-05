@@ -8,9 +8,14 @@ import org.yx.mongotest.authorization.entity.User;
 import java.time.LocalDate;
 import java.util.Collection;
 import java.util.Comparator;
+import java.util.LinkedHashMap;
 import java.util.function.Supplier;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
+
+import static java.util.function.Function.identity;
+import static java.util.stream.Collectors.toList;
+import static java.util.stream.Collectors.toMap;
 
 /**
  * @author yangxin
@@ -18,11 +23,12 @@ import java.util.stream.Stream;
 public class TestStream {
 
     public static void main(String[] args) {
-        final var zs = new User().setName("张三").setAge(20).setBirthday(LocalDate.of(1991, 11, 12)).setPassword("123");
-        final var ls = new User().setName("李四").setAge(15).setBirthday(LocalDate.of(1999, 9, 30)).setPassword("456");
-        final var ww = new User().setName("王五").setAge(71).setBirthday(LocalDate.of(1801, 3, 20)).setPassword("123");
-        final var zl = new User().setName("赵六").setAge(50).setBirthday(LocalDate.of(1959, 10, 9)).setPassword("123");
-        Supplier<Stream<User>> users = () -> Stream.of(zs, ls, ww, zl);
+        final var zs = new User().setName("张三").setAge(20).setBirthday(LocalDate.of(1991, 11, 12)).setPassword("5");
+        final var ls = new User().setName("李四").setAge(15).setBirthday(LocalDate.of(1999, 9, 30)).setPassword("4");
+        final var ww = new User().setName("王五").setAge(20).setBirthday(LocalDate.of(1801, 3, 20)).setPassword("1");
+        final var zl = new User().setName("赵六").setAge(20).setBirthday(LocalDate.of(1959, 10, 9)).setPassword("2");
+        final var zll = new User().setName("赵六六").setAge(56).setBirthday(LocalDate.of(1969, 10, 19)).setPassword("3");
+        Supplier<Stream<User>> users = () -> Stream.of(zs, zll, ls, ww, zl);
 
         // 过滤age不等于15的user(filter)
         users.get().filter(f -> f.getAge() == 15).forEach(System.out::println);
@@ -65,7 +71,17 @@ public class TestStream {
 
         System.out.println("—————————————————————————————————————————————————groupingBy—————————————————————————————————————————————————");
         // 通过password分组
-        users.get().collect(Collectors.groupingBy(User::getPassword)).forEach((k, v) -> System.out.printf("%s %s%n", k, v));
+        users.get().sorted(Comparator.comparing(User::getPassword))
+                .collect(Collectors.groupingBy(User::getAge))
+                .forEach((k, v) -> System.out.printf("%s %s%n", k, v));
+        System.out.println("—————————————————————————————————————————————————groupingBy and sorted—————————————————————————————————————————————————");
+        users.get().sorted(Comparator.comparing(User::getPassword))
+                .collect(Collectors.groupingBy(User::getAge, LinkedHashMap::new, toList()))
+                .forEach((k, v) -> System.out.printf("%s %s%n", k, v));
+        System.out.println("—————————————————————————————————————————————————groupingBy and sorted—————————————————————————————————————————————————");
+        users.get().sorted(Comparator.comparing(User::getPassword))
+                .collect(Collectors.groupingBy(User::getAge, LinkedHashMap::new, toMap(User::getName, identity())))
+                .forEach((k, v) -> System.out.printf("%s %s%n", k, v));
 
     }
 }
