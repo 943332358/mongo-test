@@ -8,3 +8,5 @@ spring:
     cache: false
 jwt:
   privateKey: 1234567812345678
+server:
+  port: 8081
