@@ -10,6 +10,8 @@ import javassist.CtMethod;
 public class Test {
     public static void main(String[] args) throws Exception {
         ClassPool pool = ClassPool.getDefault();
+        String cc1 = "cc";
+        System.out.println(cc1);
 
 
         CtClass cc = pool.get("org.yx.mongotest.javassist.JavassistTest");

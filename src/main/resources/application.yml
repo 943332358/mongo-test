@@ -10,3 +10,8 @@ jwt:
   privateKey: 1234567812345678
 server:
   port: 8081
+mongo:
+  base:
+    distribute:
+      test1: aaa
+    test: bbb
