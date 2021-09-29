@@ -3,6 +3,7 @@ package org.yx.mongotest;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.data.mongodb.repository.config.EnableMongoRepositories;
 import org.yx.BaseProperties;
 
@@ -12,6 +13,7 @@ import org.yx.BaseProperties;
 @SpringBootApplication
 @EnableMongoRepositories
 @EnableConfigurationProperties(BaseProperties.class)
+@EnableCaching
 public class MongoTestApplication {
 
     public static void main(String[] args) {

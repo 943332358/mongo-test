@@ -57,7 +57,7 @@ public class SecSecurityConfig extends WebSecurityConfigurerAdapter {
                 .authorizeRequests()
                 .antMatchers("/admin/**").hasRole("ADMIN")
                 .antMatchers("/user/**").hasAnyRole("USER1", "ADMIN", "USER2")
-                .antMatchers("/anonymous*", "/mongo/**", "/test/**").anonymous()
+                .antMatchers("/anonymous*", "/mongo/**", "/test/**", "/cacheUser").anonymous()
                 .antMatchers("/login*").permitAll()
                 .anyRequest().authenticated()
                 .and()
