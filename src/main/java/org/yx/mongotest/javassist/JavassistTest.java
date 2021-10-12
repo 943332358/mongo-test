@@ -8,6 +8,10 @@ import org.yx.mongotest.authorization.entity.User;
 public class JavassistTest {
     private String name;
 
+    public JavassistTest() {
+        System.out.println("调用构造函数");
+    }
+
     public JavassistTest(String name) {
         this.name = name;
     }

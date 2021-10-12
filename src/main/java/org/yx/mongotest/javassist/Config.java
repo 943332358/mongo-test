@@ -2,19 +2,23 @@ package org.yx.mongotest.javassist;
 
 import javassist.ClassPool;
 import javassist.CtClass;
-import javassist.CtMethod;
 import javassist.LoaderClassPath;
+import lombok.SneakyThrows;
 import lombok.var;
-import org.yx.mongotest.authorization.entity.User;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
 
 /**
- * @author yangxin
+ * @author A
  */
-public class Test {
-    public static void main(String[] args) throws Exception {
+@Configuration
+public class Config {
+
+    @SneakyThrows
+    @Bean
+    public JavassistTest javassistTest() {
         ClassPool pool = ClassPool.getDefault();
 
-        //pool.appendClassPath(new LoaderClassPath(JavassistTest.class.getClassLoader()));
 
         CtClass cc = pool.get("org.yx.mongotest.javassist.JavassistTest");
         cc.defrost();
@@ -26,17 +30,14 @@ public class Test {
 
         m.insertBefore("System.out.println(\"modify class ok\");");
         m.insertAfter("System.out.println(\"modify class end\");");
-        m.insertAt(31, "int a = 10;" +
+        m.insertAt(30, "int a = 10;" +
                 "System.out.println(a);" +
                 "System.out.println(name);");
 
-        m.insertAt(30, "sql = \"update aa\";");
+        m.insertAt(29, "sql = \"update aa\";");
 
-        cc.writeFile();
-        cc.toClass();
+//        cc.toClass();
 
-        JavassistTest h2 = new JavassistTest("yangxin");
-        h2.say("aa", new User());
-
+        return new JavassistTest("yangxin");
     }
 }
